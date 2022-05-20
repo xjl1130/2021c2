@@ -16,13 +16,19 @@ function draw() {
         rect(50, 100, 150, 2);
     if (choice == 2)
         rect(50, 150, 150, 2);
-    text("Coice 1", 50, 50);
-    text("Coice 2", 50, 100);
-    text("Coice 3", 50, 150);
+    if (choice == 3)
+        rect(50, 200, 150, 2);
+    if (choice == 4)
+        rect(50, 250, 150, 2);
+    text("中午吃泡麵", 50, 50);
+    text("中午吃foodpanda", 50, 100);
+    text("中午吃ubereats", 50, 150);
+    text("中午吃牛排", 50, 200);
+    text("中午吃大餐", 50, 250);
 }
 
 function mousePressed() {
-    choice = int(random(3));
+    choice = int(random(5));
 }
 
 function initializeFields() {
